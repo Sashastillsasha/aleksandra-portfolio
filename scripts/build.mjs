@@ -6,7 +6,6 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 const contact = {
   email: "charsasha10@gmail.com",
-  phone: "+31 6 5769 4723",
   linkedin: "https://www.linkedin.com/in/aleksandra-chargeishvili",
 };
 
@@ -322,7 +321,7 @@ function head({ title, description, depth = 0, image = "glina-objects.webp", key
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#fddaef">
+  <meta name="theme-color" content="#f7f6f2">
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
   <meta name="keywords" content="Aleksandra Chargeishvili, Amsterdam artist, Amsterdam designer, creative producer, industrial design, ${esc(keywords)}">
@@ -331,7 +330,7 @@ function head({ title, description, depth = 0, image = "glina-objects.webp", key
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:image" content="${prefix}assets/media/${esc(image)}">
   <link rel="icon" href="${prefix}favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="${prefix}styles.css">
+  <link rel="stylesheet" href="${prefix}styles-corporate.css">
 </head>`;
 }
 
@@ -420,7 +419,7 @@ function homePage() {
   ${nav(0)}
   <main>
     <section class="shell hero">
-      <div><p class="eyebrow">artist · designer · creative producer · Amsterdam</p><h1>Aleksandra Chargeishvili</h1><p class="lead">I make films, objects, images, websites, installations, publications and situations where people can take part.</p><p class="hero-note">My work moves between contemporary art, design, material research and the practical production that lets an idea meet the public.</p><p class="availability">currently available for a new role · Amsterdam · no sponsorship needed</p></div>
+      <div><p class="eyebrow">designer · creative producer · Amsterdam</p><h1>Aleksandra Chargeishvili</h1><p class="lead">Amsterdam-based designer and creative producer.</p><p class="hero-note">I work between emerging technologies and visual communication, finding clear visual forms for complex ideas and creating experiences people can enter, use and remember.</p><p class="availability">currently available for a new role · Amsterdam · no sponsorship needed</p></div>
       <figure class="hero-portrait"><img src="assets/media/aleksandra-profile.webp" alt="Portrait of Aleksandra Chargeishvili"><figcaption class="caption">hello, I’m Aleksandra ♡</figcaption></figure>
     </section>
 
@@ -434,9 +433,9 @@ function homePage() {
 
     <section class="section"><div class="shell"><div class="section-head"><h2>some numbers, because projects also live in the real world :)</h2></div><ul class="facts-line"><li><strong>7.2K</strong> audience built from zero</li><li><strong>2.6M</strong> views on one Reel</li><li><strong>150–300K</strong> monthly reach</li><li><strong>~30</strong> qualified enquiries</li><li><strong>€20K</strong> event budget</li><li><strong>12 / 23 min</strong> interviews / film</li></ul></div></section>
 
-    <section class="section" id="about"><div class="shell about-grid"><div><p class="eyebrow">about</p><h2>I like projects that begin with a difficult idea and need a form.</h2><p>I am an Amsterdam-based artist, designer and creative producer. That form might become a film, an identity, a website, an object, a workshop, an event or an installation. My background in Industrial Design and Marketing lets me move between experimentation and the practical decisions needed to bring work into the world.</p></div><ul class="skills"><li>moving image, editing & visual storytelling;</li><li>art direction, identity & graphic design;</li><li>websites, interfaces & interactive work;</li><li>objects, materials, clay & textile;</li><li>exhibitions, events & workshops;</li><li>content, audience & analytics;</li><li>Figma, Adobe CC, Meta, Eventbrite & Notion;</li></ul></div></section>
+    <section class="section" id="about"><div class="shell about-grid"><div><p class="eyebrow">about</p><h2>I am an Amsterdam-based designer and creative producer making digital content, visual identities, websites, publications, objects and installations.</h2><p>I work between emerging technologies and visual communication, finding clear visual forms for complex ideas and creating experiences people can enter, use and remember.</p></div><ul class="skills"><li>moving image, editing & visual storytelling;</li><li>art direction, identity & graphic design;</li><li>websites, interfaces & interactive work;</li><li>objects, materials, clay & textile;</li><li>exhibitions, events & workshops;</li><li>content, audience & analytics;</li><li>Figma, AI tools, Adobe CC, Meta, Eventbrite & Notion;</li></ul></div></section>
 
-    <section class="section" id="contact"><div class="shell contact-block"><h2>say hello ♡</h2><div class="contact-links"><p><a href="mailto:${contact.email}">${contact.email}</a></p><p><a href="tel:+31657694723">${contact.phone}</a></p><p><a href="${contact.linkedin}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></p></div></div></section>
+    <section class="section" id="contact"><div class="shell contact-block"><h2>say hello ♡</h2><div class="contact-links"><p><a href="mailto:${contact.email}">${contact.email}</a></p><p><a href="${contact.linkedin}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></p></div></div></section>
   </main>
   <figure class="hover-preview" aria-hidden="true"><img src="assets/media/glina-objects.webp" alt=""><video muted loop playsinline preload="metadata"></video><figcaption></figcaption></figure>
   ${footer(0)}
