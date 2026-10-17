@@ -418,12 +418,12 @@ function homePage() {
   };
   const principalRows = principal.map(homeRow).join("");
   const noteRows = notes.map((p, index) => homeRow(p, index + principal.length)).join("");
-  return `${head({ title: "Aleksandra Chargeishvili — artist, designer & creative producer", description: "Portfolio of Amsterdam-based artist, designer and creative producer Aleksandra Chargeishvili: films, objects, installations, websites, publications and public work." })}
+  return `${head({ title: "Aleksandra Chargeishvili — Creative Producer, Content & Events, Amsterdam", description: "Portfolio of Amsterdam-based creative producer and designer Aleksandra Chargeishvili, working across content, event production, emerging technologies, exhibitions, installations and audience development." })}
 <body>
   ${nav(0)}
   <main>
     <section class="shell hero">
-      <div><p class="eyebrow">designer · creative producer · Amsterdam</p><h1>Aleksandra Chargeishvili</h1><p class="lead">Amsterdam-based designer and creative producer.</p><p class="hero-note">I work between emerging technologies and visual communication, finding clear visual forms for complex ideas and creating experiences people can enter, use and remember.</p><p class="availability">currently available for a new role · Amsterdam · no sponsorship needed</p></div>
+      <div><p class="eyebrow">designer · creative producer · Amsterdam</p><h1>Aleksandra Chargeishvili</h1><p class="lead">Amsterdam-based creative producer working across content, events and emerging technologies.</p><p class="hero-note">I develop campaigns, exhibitions, installations and public programmes—from audience development and visual communication through production and delivery.</p><p class="availability">currently available for a new role · Amsterdam · no sponsorship needed</p></div>
       <figure class="hero-portrait"><img src="assets/media/aleksandra-profile.webp" alt="Portrait of Aleksandra Chargeishvili"><figcaption class="caption">hello, I’m Aleksandra ♡</figcaption></figure>
     </section>
 
@@ -456,7 +456,7 @@ for (const [index, project] of projects.entries()) {
 }
 
 await writeFile(join(root, "robots.txt"), "User-agent: *\nAllow: /\n");
-await writeFile(join(root, "llms.txt"), `# Aleksandra Chargeishvili\n\nAmsterdam-based artist, designer and creative producer. Portfolio covering films, objects, installations, websites, publications, workshops, exhibitions, visual identity and audience work.\n\nContact: ${contact.email}\nLinkedIn: ${contact.linkedin}\n`);
+await writeFile(join(root, "llms.txt"), `# Aleksandra Chargeishvili\n\nAmsterdam-based creative producer and designer working across content, events and emerging technologies. Portfolio covering campaigns, exhibitions, installations, public programmes, visual communication and audience development.\n\nContact: ${contact.email}\nLinkedIn: ${contact.linkedin}\n`);
 const siteBase = "https://YOUR-GITHUB-USERNAME.github.io/aleksandra-chargeishvili-portfolio";
 const sitemapPaths = ["", ...projects.map((project) => `projects/${project.slug}.html`)];
 await writeFile(join(root, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapPaths.map((path) => `  <url><loc>${siteBase}/${path}</loc><lastmod>2026-10-16</lastmod></url>`).join("\n")}\n</urlset>\n`);
