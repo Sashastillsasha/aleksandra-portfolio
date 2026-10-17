@@ -45,3 +45,10 @@ if (preview && window.matchMedia('(hover: hover)').matches) {
     item.addEventListener('focusout', () => { preview.classList.remove('is-visible'); video.pause(); });
   });
 }
+
+
+const cloudflareAnalytics = document.createElement('script');
+cloudflareAnalytics.type = 'module';
+cloudflareAnalytics.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+cloudflareAnalytics.dataset.cfBeacon = '{"token":"9acedc7abb0a41ce9e014e1aef0b96d7"}';
+document.head.appendChild(cloudflareAnalytics);
