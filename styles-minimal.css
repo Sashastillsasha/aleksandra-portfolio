@@ -136,3 +136,11 @@ h1, h2, h3, p { margin-top: 0; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* Keep headings, navigation and contact labels in the same sans-serif voice */
+.nav, .brand, .hero h1, .section h2, .contact-block h2,
+.project-hero h1, .story-grid > h2, .story h2, .site-footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a, a:visited { color: #111; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover, a:focus-visible { text-decoration-thickness: 2px; }
