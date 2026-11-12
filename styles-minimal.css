@@ -1,0 +1,51 @@
+/* White, quiet portfolio treatment */
+:root {
+  --paper: #fff;
+  --paper-2: #f7f7f7;
+  --white: #fff;
+  --blue: #111;
+  --visited: #555;
+  --ink: #111;
+  --muted: #777;
+  --rule: #dedede;
+}
+body { background: #fff; color: #111; font-family: Arial, Helvetica, sans-serif; }
+a, a:visited, a:hover { color: #111; }
+a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.site-header { background: rgba(255,255,255,.96); border-color: #e5e5e5; }
+.nav { font-family: Arial, Helvetica, sans-serif; font-size: 13px; }
+.brand { font-weight: 500; letter-spacing: 0; }
+.nav-links { gap: 22px; }
+.eyebrow, .tiny, .caption, .facts, .availability, .role-label,
+.section-head h2, .work-number, .work-year, .skills, .contact-links,
+.site-footer, .project-hero h1, .facts, .story-grid > h2, .metric span,
+.external-links, .next-project { font-family: Arial, Helvetica, sans-serif; letter-spacing: 0; }
+.eyebrow { color: #777; }
+.hero { grid-template-columns: minmax(0, 720px) 170px; padding-top: clamp(70px, 12vw, 150px); padding-bottom: 76px; }
+.hero h1, .about-grid h2, .contact-block h2 { font-family: Arial, Helvetica, sans-serif; font-weight: 400; letter-spacing: -.045em; }
+.hero h1 { font-size: clamp(38px, 5vw, 64px); }
+.lead { font-size: clamp(20px, 2.5vw, 28px); }
+.availability { padding: 0; border: 0; background: transparent; color: #555; }
+.hero-portrait, .hero-portrait img, .current img, .mobile-thumb { border: 0; }
+.hero-portrait img { filter: grayscale(100%); }
+.section { border-color: #e5e5e5; }
+.section-head h2 { font-size: 13px; font-weight: 500; }
+.current h3, .work-title, .metric strong { font-family: Arial, Helvetica, sans-serif; }
+.date-stamp { border: 0; background: transparent; padding: 0; font-size: 11px; }
+.work-index { border-color: #111; }
+.work-item { border-color: #e5e5e5; }
+.work-title { font-weight: 400; }
+.work-number, .work-year { color: #777; }
+.hover-preview { display: none; }
+.facts-line strong, .metric strong { color: #111; }
+.facts-line li { border-color: #e5e5e5; }
+.facts-line { border-color: #111; }
+.skills { border-color: #111; }
+.skills li { border-color: #e5e5e5; }
+.site-footer { border-color: #e5e5e5; }
+.project-hero h1 { font-weight: 400; }
+.media img, .media video { background: #f7f7f7; border: 0; }
+@media (max-width: 620px), (hover: none) {
+  .hero { padding-top: 52px; padding-bottom: 44px; }
+  .hero-portrait { justify-self: start; }
+}
