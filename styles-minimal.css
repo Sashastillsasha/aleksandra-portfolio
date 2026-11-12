@@ -49,3 +49,14 @@ a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
   .hero { padding-top: 52px; padding-bottom: 44px; }
   .hero-portrait { justify-self: start; }
 }
+
+/* Keep the hero on one readable column on phones */
+@media (max-width: 700px) {
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .hero > div { min-width: 0; }
+  .hero h1 { max-width: 12ch; font-size: clamp(38px, 11vw, 54px); overflow-wrap: anywhere; }
+  .hero-portrait { grid-row: 2; width: min(58vw, 220px); justify-self: start; margin-top: 26px; }
+  .hero-note, .lead { max-width: 38rem; }
+  .nav { flex-wrap: wrap; row-gap: 8px; }
+  .nav-links { gap: 14px; }
+}
