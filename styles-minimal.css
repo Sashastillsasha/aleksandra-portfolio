@@ -188,3 +188,23 @@ a:hover, a:focus-visible { text-decoration-thickness: 2px; }
   .offer-grid { grid-template-columns: 1fr; gap: 20px; }
   .work-together-intro { font-size: 17px; }
 }
+
+/* Simplify the Work together block */
+.work-together-section { border-top: 0; padding-top: 30px; }
+.section-kicker,
+.work-together-intro,
+.offer h2,
+.offer p,
+.work-together-contact {
+  font-size: 16px;
+  line-height: 1.55;
+}
+.section-kicker { color: var(--ink); margin-bottom: 18px; }
+.work-together-intro { max-width: none; margin-bottom: 22px; }
+.offer-grid { border-top: 0; padding-top: 0; gap: 30px; }
+.offer h2 { margin-bottom: 6px; }
+.work-together-contact { border-top: 0; padding-top: 0; margin-top: 24px; }
+.work-together-contact strong { font-weight: 700; }
+@media (max-width: 620px) {
+  .work-together-intro { font-size: 16px; }
+}
