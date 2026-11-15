@@ -208,3 +208,31 @@ a:hover, a:focus-visible { text-decoration-thickness: 2px; }
 @media (max-width: 620px) {
   .work-together-intro { font-size: 16px; }
 }
+
+/* Final typography and line reset for Work together */
+.work-together-section,
+.work-together-section .shell,
+.work-together-section .offer-grid,
+.work-together-section .work-together-contact {
+  border: 0 !important;
+}
+.work-together-section .section-kicker,
+.work-together-section .offer h2 {
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+.work-together-section .work-together-intro,
+.work-together-section .offer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 400;
+}
+.work-together-section .work-together-intro { margin: 0 0 22px; }
+.work-together-section .offer h2 { margin-bottom: 6px; }
+.work-together-section .offer p { margin: 0; }
+.work-together-section .work-together-contact { margin-top: 24px; padding: 0; }
