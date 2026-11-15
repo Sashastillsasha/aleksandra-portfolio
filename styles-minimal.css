@@ -144,3 +144,47 @@ h1, h2, h3, p { margin-top: 0; }
 }
 a, a:visited { color: #111; font-weight: 700; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 a:hover, a:focus-visible { text-decoration-thickness: 2px; }
+
+/* Quietly distinguish the collaboration offer from the project list */
+.work-together-section {
+  padding: 30px 0 54px;
+  border-top: 1px solid var(--line);
+}
+.section-kicker {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.work-together-intro {
+  max-width: 620px;
+  margin: 0 0 28px;
+  font-size: 18px;
+  line-height: 1.45;
+}
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.offer h2 {
+  margin: 0 0 7px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+.offer p {
+  margin: 0;
+  font-size: 14px;
+}
+.work-together-contact {
+  margin: 24px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+}
+@media (max-width: 620px) {
+  .offer-grid { grid-template-columns: 1fr; gap: 20px; }
+  .work-together-intro { font-size: 17px; }
+}
